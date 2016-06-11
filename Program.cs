@@ -26,6 +26,14 @@ namespace CA_Mac_PrintStarArray
                 return;
             }
 
+            if(count%2==0)
+            {
+                System.Console.WriteLine("Please enter an odd numeric argument.");
+                System.Console.WriteLine("Usage: Main.exe <an odd num>");
+                return;
+
+            }
+
             string[,] arrays = new string[count,count];
             PrintStarProcessor star = new PrintStarProcessor();
             star.Init(ref arrays,count);
